@@ -1,0 +1,21 @@
+#game-canvas {
+    display: block;
+    margin-left: auto; margin-right: auto;
+    width: 740px; height: 300px;
+    background-color: black;
+    position: relative
+}
+
+.game-slice { display: block; margin: 0px; padding: 0px; }
+#player { position: absolute; top: 0px; left: 0px; }
+
+#game-container { margin: auto; margin-top: 1.5em; margin-bottom: 1.5em; }
+#controls { display: block; text-align: center; margin-top: 9px;}
+#controls table { margin: auto; margin-bottom: 6px; }
+#controls table, #controls table td { border: none; }
+#controls table tr td:nth-child(1) { text-align: left; }
+#controls table tr td:nth-child(2) { text-align: right; padding-left: .75em; }
+#controls #buttons { margin-top: 9px; }
+#controls button { margin-left: 1.25em;  margin-right: 1.25em; }
+
+.copyright-footer { padding-bottom: 5em; }
