@@ -35,9 +35,11 @@ from
 > * If I is a YES-instance, then there exists X such that V(I,X) = YES.
 > * If I is a NO-instance, then for all X, V(I,X) = NO.
 >
-> Furthermore, X should have length polynomial in size of I (since we
-> are really only giving V time polynomial in the size of the instance,
-> not the combined size of the instance and solution).
+> (Here, X is a 'witness' to the solubility of I, for example a
+> description of the solution to I.)  Furthermore, X should have length
+> polynomial in size of I (since we are really only giving V time
+> polynomial in the size of the instance, not the combined size of the
+> instance and solution).
 
 It was the '_X should have length polynomial in size of I_' part that I
 had overlooked.  Aaron conjectured that
