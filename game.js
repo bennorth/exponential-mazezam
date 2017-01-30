@@ -279,8 +279,9 @@ jQuery(document).ready(function($)
         s = this;
         var step_fun = function() { s.step(); };
 
-        if (!this.enabled || (++this.ui.wait_phase < this.ui.wait_period)) {
-            window.requestAnimationFrame(step_fun);
+        window.requestAnimationFrame(step_fun);
+
+        if (!this.enabled || this.completed || (++this.ui.wait_phase < this.ui.wait_period)) {
             return;
         }
 
@@ -295,7 +296,6 @@ jQuery(document).ready(function($)
             this.current_chunk[this.current_step_in_chunk++]();
             if (this.current_step_in_chunk == this.current_chunk.length)
                 this.current_chunk = null;
-            window.requestAnimationFrame(step_fun);
         }
     }
 
