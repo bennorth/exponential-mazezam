@@ -16,7 +16,7 @@ constructed what I thought was
   polynomial time, then so can any other problem in NP.
 
 I recently received an email from
-[Aaron Williams](https://simons-rock.edu/academics/faculty-bios/science-mathematics-and-computing-faculty/aaron-williams.php)
+[Aaron Williams](http://simons-rock.edu/faculty/aaron-williams)
 pointing out that what I had actually done was show the second part
 only.  I had not shown that Mazezam was in NP.
 
