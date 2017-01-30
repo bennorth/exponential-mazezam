@@ -281,9 +281,11 @@ jQuery(document).ready(function($)
 
         window.requestAnimationFrame(step_fun);
 
-        if (!this.enabled || this.completed || (++this.ui.wait_phase < this.ui.wait_period)) {
+        if (!this.enabled
+            || this.completed
+            || (++this.ui.wait_phase < this.ui.wait_period))
+            //
             return;
-        }
 
         this.ui.wait_phase = 0;
 
