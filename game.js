@@ -244,6 +244,7 @@ jQuery(document).ready(function($)
         this.enabled = false;
         this.counter.reset();
         this.player.reset();
+        this.completed = false;
     }
 
     Scheduler.prototype.next_chunk = function() {
@@ -256,7 +257,7 @@ jQuery(document).ready(function($)
             switch (this.subpc++) {
             case 0: return this.player.moves_to_bit_entry(6);
             case 1: return this.player.moves_to_bit_bottom(6, 'stop_short')
-            case 2: return null;
+            case 2: this.completed = true; return null;
             }
 
         var b = solution[this.pc];
