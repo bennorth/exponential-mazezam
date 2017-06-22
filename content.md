@@ -149,6 +149,8 @@ reset the level.  The radio buttons control the animation's speed.
 </form><p id="buttons"><button id="btn-start">Start</button><button id="btn-reset">Reset</button></p></div>
 </div>
 
+(Thanks to Pedro Gimeno for reporting a bug where the demo did not
+behave correctly in some browsers.)
 
 ## Conclusion
 

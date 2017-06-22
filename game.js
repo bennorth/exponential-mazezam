@@ -17,6 +17,10 @@
 
 jQuery(document).ready(function($)
 {
+    // IE lacks Math.sign(); provide simple version serving our needs:
+    if (!Math.sign)
+        Math.sign = function(x) { return x == 0 ? 0 : (x > 0 ? 1 : -1); };
+
     var GRID_SZ = 10;
     var BIT_STRIDE = 11;
     var BIT_ENTRY_STRIDE = 2;
